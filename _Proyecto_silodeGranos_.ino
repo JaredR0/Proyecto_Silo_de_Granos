@@ -1,3 +1,14 @@
+/*
+ Fundacion Kinal
+ Centro Educativo Tecnico Laboral Kinal
+ Electronica
+ Grado: Quinto
+ Sección A
+ Nombre: Jared Hernan Ruiz Anleu
+ Curso: Taller de electronica digital y reparación de computadoras I
+ Carné: 2022011
+ */
+
 #include <Wire.h> 
 #include <Servo.h>
 #include <Keypad.h>
