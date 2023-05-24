@@ -244,7 +244,7 @@ switch(tecla){                                  // que evaluará el valor de tec
    pantalla_grupo.print("   1 onza      ");        // Se imprime "1 onza" en el LCD  
       Serial.println(capacidad);                // Escribe la cantidad que desea
       Servo_grupo.write(60);                    // Se mueve el servo a una posición de 90 grados
-      delay(830);                              // espera de 2 segundos
+      delay(800);                              // espera de 2 segundos
       Servo_grupo.write(0);                     // Se regresa a la posicion inicial (0)
       delay(500);                               // Espera de 500 milisegundos
      
@@ -264,7 +264,7 @@ switch(tecla){                                  // que evaluará el valor de tec
    pantalla_grupo.print("   8 onza      ");      // Se imprime "2 onzas" en el LCD
       Serial.println(capacidad);                 // Escribe la cantidad que desea
       Servo_grupo.write(60);                     // Se mueve el servo a una posición de 90 grados
-      delay(10000);                              // Espera de 5 segundos
+      delay(3700);                              // Espera de 5 segundos
       Servo_grupo.write(0);                      // Se regresa a la posicion inicial (0)
       delay(500);                                // Espera de 500 milisegundos
       
@@ -284,7 +284,7 @@ switch(tecla){                                  // que evaluará el valor de tec
    pantalla_grupo.print("   12 onzas     ");     // Se imprime "3 onzas" en el LCD
       Serial.println(capacidad);                 // Escribe la cantidad que desea
       Servo_grupo.write(60);                     // Se mueve el servo a una posición de 90 grados
-      delay(10000);                              // Espera de 10 segundos   
+      delay(7000);                              // Espera de 10 segundos   
       Servo_grupo.write(0);                      // Se regresa a la posicion inicial (0)
       delay(500);                                // Espera de 500 milisegundos  
       
@@ -304,7 +304,7 @@ switch(tecla){                                  // que evaluará el valor de tec
    pantalla_grupo.print("   16 onzas     ");     // Se imprime "4 onzas" en el LCD
       Serial.println(capacidad);                 // Escribe la cantidad que desea
       Servo_grupo.write(60);                     // Se mueve el servo a una posición de 90 grados
-      delay(15000);                              // Espera de 15 segundos  
+      delay(10000);                              // Espera de 15 segundos  
       Servo_grupo.write(0);                      // Se regresa a la posicion inicial (0)
       delay(500);                                // Espera de 500 milisegundos 
       
@@ -323,7 +323,7 @@ switch(tecla){                                  // que evaluará el valor de tec
    pantalla_grupo.print("   24 onzas     ");     // Se imprime "5 onzas" en el LCD
       Serial.println(capacidad);                 // Escribe la cantidad que desea
       Servo_grupo.write(60);                     // Se mueve el servo a una posición de 90 grados
-      delay(20000);                              // Espera de 20 segundos 
+      delay(15000);                              // Espera de 20 segundos 
       Servo_grupo.write(0);                      // Se regresa a la posicion inicial (0)
       delay(500);                                // Espera de 500 milisegundos 
        
@@ -343,7 +343,7 @@ switch(tecla){                                  // que evaluará el valor de tec
    pantalla_grupo.print("   32 onzas     ");     // Se imprime "6 onzas" en el LCD
       Serial.println(capacidad);                 // Escribe la cantidad que desea
       Servo_grupo.write(60);                     // Se mueve el servo a una posición de 90 grados
-      delay(30000);                              // Espera de 30 segundos 
+      delay(25000);                              // Espera de 30 segundos 
       Servo_grupo.write(0);                      // Se regresa a la posicion inicial (0)
       delay(500);                                // Espera de 500 milisegundos
      
