@@ -9,6 +9,7 @@ Integrantes
 Codigo Tecnico EB5AM
 Proyecto Silo de granos 
 */
+
 // Incluir las bibliotecas necesarias
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
@@ -18,14 +19,15 @@ Proyecto Silo de granos
 const int LCD_ADDRESS = 0x27;
 
 // Definir las constantes de calibración
-const float CALIBRATION_FACTOR = 14.5; // Factor de calibración para convertir a onzas
-const float MIN_FORCE = 0.0; // Fuerza mínima en el sensor
-const float MAX_FORCE = 1000.0; // Fuerza máxima en el sensor
+int CALIBRATION_FACTOR = 14.5; // Factor de calibración para convertir a onzas
+int MIN_FORCE = 00.0; // Fuerza mínima en el sensor
+int MAX_FORCE = 200.0; // Fuerza máxima en el sensor
 
 // Crear un objeto de la clase LiquidCrystal_I2C
 LiquidCrystal_I2C lcd(LCD_ADDRESS, 16, 2);
 
 void setup() {
+  Serial.begin(9600);
  // Inicializar la comunicación I2C y el LCD
  Wire.begin();
  lcd.init();
@@ -41,8 +43,10 @@ void setup() {
 }
 
 void loop() {
+
  // Leer el valor del sensor de fuerza
  int fsrValue = analogRead(FSR_PIN);
+ Serial.println(fsrValue);
 
  // Convertir el valor del sensor a onzas
  float force = map(fsrValue, 0, 1023, MIN_FORCE, MAX_FORCE);
@@ -59,5 +63,5 @@ void loop() {
  lcd.print(ounces, 2);
  lcd.print(" oz");
 
- delay(100);
+ delay(1000);
 }
